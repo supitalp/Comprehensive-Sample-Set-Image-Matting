@@ -1,7 +1,12 @@
 Comprehensive-Sample-Set-Image-Matting
 ======================================
 
-This implementation is based on "Improving image matting using comprehensive sample sets" by Shahrian & al. and was coded as part of a science project at university.
+## Overview of the program
+
+This program is an implementation of the paper "Improving image matting using comprehensive sample sets" by Shahrian & al. and was coded as part of a science project at university. It includes a small graphical interface to analyze the results and observe the behavior of the algorithm.
+
+![](http://dchiffresdnotes.fr/projects/cssmatting/prev1.png)
+![](http://dchiffresdnotes.fr/projects/cssmatting/prev2.png)
 
 **Disclaimer** Is is not an official implementation of the paper (an official binary can be found [here](http://www.alphamatting.com/ComprehensiveSampling.zip)), it is only partial and has not been designed with efficiency concerns. It will not give the same results as the official one and therefore cannot be used to compare the efficiency of this algorithm with other image matting algorithms.
 
