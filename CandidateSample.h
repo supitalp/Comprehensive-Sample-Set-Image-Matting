@@ -10,6 +10,9 @@
 
 #include "Region.h"
 
+/** This class is designed to represent a candidate sample. It contains the spatial position,
+ * color and a pointer to the region where it was extracted.
+ */
 class CandidateSample {
 public:
 	CandidateSample(Region * _sourceRegion, cv::Point _pos, cv::Vec3d _color);

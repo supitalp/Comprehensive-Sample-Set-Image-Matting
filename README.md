@@ -5,23 +5,23 @@ This implementation is based on "Improving image matting using comprehensive sam
 
 **Disclaimer** Is is not an official implementation of the paper (an official binary can be found [here](http://www.alphamatting.com/ComprehensiveSampling.zip)), it is only partial and has not been designed with efficiency concerns. It will not give the same results as the official one and therefore cannot be used to compare the efficiency of this algorithm with other image matting algorithms.
 
-# How to make the program work?
+## How to make the program work?
 
-## Compilation
+### Compilation
 
 You need to have the library OpenCV installed on your computer (version 2.4.8 recommended, older versions not tested but should work properly). Details regarding the installation procedure for each platform won't be given here but are easily accessible online ([here for example](http://docs.opencv.org/doc/tutorials/introduction/table_of_content_introduction/table_of_content_introduction.html)).
 
 A Makefile is provided with the code so compilation shouldn't take more work than simply type make in the code directory. Note that you may have to change the lines LIBS = -L/usr/local/lib and INC = -I/usr/local/include/opencv to point to the directory where OpenCV is installed on your computer.
 
-## Usage
+### Usage
 
 The program must be given as a command-line argument the name of the image (including the extension). Input images should be stored in directory input/ and trimaps in directory trimap/ with the exact same name. Usage example : ./cssmatting GT01.png
 
 Note that a nice dataset of images can be found [here](http://www.alphamatting.com/datasets.php).
 
-# How to use the graphical interface?
+## How to use the graphical interface?
 
-## Displaying sample sets and best candidates
+### Displaying sample sets and best candidates
 
 Once everything has been computed, the program will open three interactive windows that are synchronized together:
 
@@ -33,13 +33,21 @@ Once everything has been computed, the program will open three interactive windo
 
 Note that pressing any key will exit the program.
 
-## Changing the objective function
+### Changing the objective function
 
 Move the slider in window "Input + (F,B)" to change the objective function for the selection of the best (F,B) pair. You can choose to use only the color constraint, the spatial constraint, the least-overlapping constraint or a combination of these. Note that the alpha matte will be updated (this can take some time depending on the size of the unknown zone).
 
-# Brief description of the data structures
+## Brief description of the data structures
 
-# Tweaking the parameters
+#### Class Region
+
+The most important data structure used in this program is the class Region. It represents a subset of a given image by embedding a list of pixel positions (indexed over the main image 'input'). It provides facilities to get access to the barycenter, mean color and variance of the region, easy access to the equivalent binary map and a function to draw itself on an image. Foreground, Background, Unknown region, subregions, and all clusters are instances of this class.
+
+#### Class CandidateSample
+
+This class is designed to represent a candidate sample. It contains the spatial position, color and a pointer to the region where it was extracted. Sample sets for each subregion are stored as lists of instances of CandidateSample.
+
+## Tweaking the parameters
 
 You can tweak some parameters of the algorithm easily by changing values in the file CSSMatting.cpp (towards the beginning). Parameters that can be changed include the number of subregions, the number of clusters for the first subregion, the type of covariance matrix for the EM algorithm, the choice of the objective function that will be used.
 
