@@ -5,7 +5,7 @@ Comprehensive-Sample-Set-Image-Matting
 
 This program is an implementation of the paper "Improving image matting using comprehensive sample sets" by Shahrian & al. and was coded as part of a science project at university. It includes a small graphical interface to analyze the results and observe the behavior of the algorithm.
 
-Here is [the scientific report](http://dchiffresdnotes.fr/projects/cssmatting/comprehensive_matting_report.pdf) that I wrote and [the slides](comprehensive_matting_slides.pdf) that were used during the presentation.
+Here is [the scientific report](http://dchiffresdnotes.fr/projects/cssmatting/comprehensive_matting_report.pdf) that I wrote and [the slides](http://dchiffresdnotes.fr/projects/cssmatting/comprehensive_matting_slides.pdf) that were used during the presentation.
 
 ![](http://dchiffresdnotes.fr/projects/cssmatting/input.png) ![](http://dchiffresdnotes.fr/projects/cssmatting/trimap.png) ![](http://dchiffresdnotes.fr/projects/cssmatting/matte.png)
 
