@@ -5,9 +5,9 @@ Comprehensive-Sample-Set-Image-Matting
 
 This program is an implementation of the paper "Improving image matting using comprehensive sample sets" by Shahrian & al. and was coded as part of a science project at university. It includes a small graphical interface to analyze the results and observe the behavior of the algorithm.
 
-Here is [the scientific report](http://dchiffresdnotes.fr/projects/cssmatting/comprehensive_matting_report.pdf) that I wrote and [the slides](http://dchiffresdnotes.fr/projects/cssmatting/comprehensive_matting_slides.pdf) that were used during the presentation.
+Here is [the scientific report](https://raw.githubusercontent.com/supitalp/Comprehensive-Sample-Set-Image-Matting/master/docs/comprehensive_matting_report.pdf) that I wrote and [the slides](https://raw.githubusercontent.com/supitalp/Comprehensive-Sample-Set-Image-Matting/master/docs/comprehensive_matting_slides.pdf) that were used during the presentation.
 
-![](http://dchiffresdnotes.fr/projects/cssmatting/input.png) ![](http://dchiffresdnotes.fr/projects/cssmatting/trimap.png) ![](http://dchiffresdnotes.fr/projects/cssmatting/matte.png)
+![](https://raw.githubusercontent.com/supitalp/Comprehensive-Sample-Set-Image-Matting/master/docs/input.png) ![](https://raw.githubusercontent.com/supitalp/Comprehensive-Sample-Set-Image-Matting/master/docs/trimap.png) ![](https://raw.githubusercontent.com/supitalp/Comprehensive-Sample-Set-Image-Matting/master/docs/matte.png)
 
 **Disclaimer** This program is not an official implementation of the paper (an official binary can be found [here](http://www.alphamatting.com/ComprehensiveSampling.zip)), it is only partial and has not been designed with efficiency concerns. It will not give the same results as the official one and therefore cannot be used to compare the efficiency of this algorithm with other image matting algorithms.
 
